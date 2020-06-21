@@ -16,12 +16,6 @@
     position: relative;
 }
 
-.logo img {
-    width: 5px;
-    height: 5px;
-    margin-left: 10px;
-}
-
 .menu_btn {
     width: 40px;
     height: 40px;
