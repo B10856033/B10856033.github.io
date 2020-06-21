@@ -36,17 +36,17 @@
     <SCRIPT language="JavaScript">
         var n = 1,
             timeID = 0;
-        imgno = new Array;
-        imgno[1] = "photo05222.jpg";
-        imgno[2] = "photo05165.jpg";
-        imgno[3] = "photo05223.jpg";
-        imgno[4] = "trace04156.jpg";
+        iframe = new Array;
+        iframe[1] = "https://www.youtube.com/embed/a52HzwvaEqE";
+        iframe[2] = "https://www.youtube.com/embed/F5CQ0qkLksE";
+        iframe[3] = "https://www.youtube.com/embed/T1Wy41kXHxU";
+        iframe[4] = "https://www.youtube.com/embed/jQv7zL3B7PQ";
 
         function change() {
             m = n;
             myText.filters["revealTrans"].Apply();
             myText.filters["revealTrans"].Transition = 23;
-            myImge.src = imgno[m];
+            myImge.src = iframe[m];
             myText.filters["revealTrans"].Play();
             n = n + 1;
             if (n >= 5) {
@@ -56,7 +56,7 @@
         }
         window.onload = change;
     </SCRIPT>
-    <div id="myText" style="position:absolute;left:142px;top:216;filter:revealTrans(duration=1.5)"><img src="photo05222.jpg" name="myImge">
+    <div id="myText" style="position:absolute;left:142px;top:216;filter:revealTrans(duration=1.5)"><iframe src="https://www.youtube.com/embed/a52HzwvaEqE" name="myImge">
     </div>
     <div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/a52HzwvaEqE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>與社工第一節比賽</div>
