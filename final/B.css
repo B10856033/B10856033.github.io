@@ -52,7 +52,7 @@ h1.logo {
 }
 
 nav {
-    width: 80%;
+    width: 60%;
     height: calc(100vh-50px);
     background-color: #ffffff;
     position: absolute;

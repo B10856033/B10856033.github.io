@@ -13,6 +13,40 @@
             text-align: center;
             Vertical-align: middle;
         }
+        
+        .nav1 {
+            width: 60%;
+            height: calc(100vh-50px);
+            background-color: #ffffff;
+            position: absolute;
+            top: 53px;
+            left: -100%;
+            transition: .5s;
+        }
+        
+        .nav1 a {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-bottom: 1px solid #000000;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .nav1 {
+                position: relative;
+                left: 0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top: 0;
+                background-color: transparent;
+            }
+            .nav1 a {
+                border-bottom: none;
+            }
+        }
     </style>
 </head>
 
@@ -31,10 +65,24 @@
             </label>
 
         <nav>
-            <a href="index.html">首頁</a>
-            <a href="photo.html">照片</a>
-            <a href="member.html">隊員</a>
-            <a href="com.html">比賽</a>
+
+            <a href="index.html">首頁</a></li>
+            <a href="photo.html">照片</a></li>
+            <a href="member.html">隊員
+
+            <nav class="nav1">
+                <a href="#">教練</a>
+            <a href="#">隊長</a>
+            <a href="#">副隊長</a>
+            <a href="#">球員</a>
+            <a href="#">球經</a>
+        </nav>
+
+        </a>
+
+
+        <a href="com.html">比賽</a>
+
         </nav>
     </div>
     <hr>
@@ -45,10 +93,9 @@
 <ul>
     <li><a href="#">教練</a></li>
     <li><a href="#">畢業學姊</a></li>
-    <li><a href="#">碩二</a></li><br>
+    <li><a href="#">碩二</a></li>
     <li><a href="#">碩一</a></li>
     <li><a href="#">大四</a></li>
-    <li><a href="#">大三</a></li><br>
     <li><a href="#">大二</a></li>
     <li><a href="#">大一</a></li>
     <li><a href="#">球經</a></li>
