@@ -7,6 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="B.css" type="text/css">
     <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+        
         .ph {
             height: auto;
             max-width: 100%;
@@ -22,6 +32,10 @@
             top: 53px;
             left: -100%;
             transition: .5s;
+        }
+        
+        .item .img1 {
+            width: 100%;
         }
         
         .b:hover>.nav1 {
@@ -98,33 +112,41 @@
 
 
 </body>
-
-<h2>
-    第19屆隊長
-</h2>
-<div>
-    <img src="隊長.jpg">
-</div>
-<h2>
-    第19屆副隊長
-</h2>
-<div>
-    <img src="副對.jpg">
+<div class="row">
+    <div class="column">
+        <h2>
+            第18屆隊長
+        </h2>
+        <p></p>
+        <div class="img1">
+            <img src="隊長.jpg">
+        </div>
+    </div>
+    <div class="column">
+        <h2>
+            <pre>第18屆副隊長</pre>
+        </h2>
+        <div class="img1">
+            <img src="副對.jpg">
+        </div>
+    </div>
 </div>
 <h2>
     球員
 </h2>
-<div>
-    <img src="球員1.jpg">
-    <img src="球員2.jpg">
-    <img src="球員3.jpg">
-    <img src="球員4.jpg">
-    <img src="球員5.jpg">
+<div class="row">
+    <div class="img1">
+        <img src="球員1.jpg" height="350" width="350">
+        <img src="球員2.jpg" height="350" width="350">
+        <img src="球員3.jpg" height="350" width="350">
+        <img src="球員4.jpg" height="350" width="350">
+        <img src="球員5.jpg" height="350" width="350">
+    </div>
 </div>
 <h2>
     球經
 </h2>
-<div>
+<div class="img1">
     <img src="球經1.jpg">
 </div>
 
