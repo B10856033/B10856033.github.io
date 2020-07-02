@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>球員介紹</title>
     <link rel="stylesheet" href="B.css" type="text/css">
     <style>
         .row {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
         }
         
         .column {
@@ -32,10 +33,6 @@
             top: 53px;
             left: -100%;
             transition: .5s;
-        }
-        
-        .item .img1 {
-            width: 100%;
         }
         
         .b:hover>.nav1 {
@@ -69,6 +66,16 @@
                 border-bottom: none;
             }
         }
+        
+        @media screen and (max-width: 500px) {
+            .row1 {
+                height: auto;
+                max-width: 100%;
+                text-align: center;
+                Vertical-align: middle;
+                margin: 40px;
+            }
+        }
     </style>
 </head>
 
@@ -94,10 +101,10 @@
 
             <nav class="nav1">
                 <a href="#">教練</a>
-            <a href="#">隊長</a>
-            <a href="#">副隊長</a>
-            <a href="#">球員</a>
-            <a href="#">球經</a>
+            <a href="#item1">隊長</a>
+            <a href="#item2">副隊長</a>
+            <a href="#item3">球員</a>
+            <a href="#item4">球經</a>
         </nav>
 
         </a>
@@ -112,42 +119,61 @@
 
 
 </body>
-<div class="row">
-    <div class="column">
-        <h2>
+<div class="ph">
+    <div>
+        <h2 id="item1">
             第18屆隊長
         </h2>
-        <p></p>
-        <div class="img1">
-            <img src="隊長.jpg">
-        </div>
-    </div>
-    <div class="column">
-        <h2>
-            <pre>第18屆副隊長</pre>
+        <div>
+            <img src="隊長.jpg" height="400"></div>
+        <pre style="font-size: 17px; font-family: '標楷體';">*科系:餐旅系
+            <br>*年級:2年級
+                </pre>
+
+        <h2 id="item2">第18屆副隊長
+
         </h2>
-        <div class="img1">
-            <img src="副對.jpg">
-        </div>
+
+        <img src="副對.jpg" height="400">
+        <pre style="font-size: 17px; font-family: '標楷體';">*科系:資管系
+            <br>*年級:碩士2年級
+                </pre>
     </div>
+
+
 </div>
-<h2>
-    球員
-</h2>
-<div class="row">
-    <div class="img1">
-        <img src="球員1.jpg" height="350" width="350">
-        <img src="球員2.jpg" height="350" width="350">
-        <img src="球員3.jpg" height="350" width="350">
-        <img src="球員4.jpg" height="350" width="350">
-        <img src="球員5.jpg" height="350" width="350">
+<div class="row1">
+    <h2 id="item3" style="text-align:center">
+        球員
+    </h2>
+
+    <div class="row">
+
+        <img src="球員5.jpg" height="400" width="400">
+        <img src="球員2.jpg" height="400" width="400">
+        <img src="球員3.jpg" height="400" width="400">
     </div>
+    <pre style="font-size: 17px; font-family: '標楷體'; text-align:center">*科系:資管系
+        <br>*年級:1年級
+        </pre>
+
+    <div class="row">
+        <img src="球員4.jpg" height="400" width="400">
+        <img src="球員1.jpg" height="400" width="400">
+    </div>
+    <pre style="font-size: 17px; font-family: '標楷體' ;  text-align:center">*科系:餐旅系
+        <br>*年級:1年級
+    </pre>
 </div>
-<h2>
-    球經
-</h2>
-<div class="img1">
-    <img src="球經1.jpg">
+
+
+<div class="ph">
+    <h2 id="item4">
+        球經
+    </h2>
+    <img src="球經1.jpg" height="400" width="400">
+    <pre style="font-size: 17px; font-family: '標楷體';">*科系:餐旅系
+        <br>*年級:1年級</pre>
 </div>
 
 
