@@ -9,17 +9,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script src="java.js"></script>
     <style>
-        .row {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        
-        .column {
-            display: flex;
-            flex-direction: column;
-        }
-        
         .ph {
             height: auto;
             max-width: 100%;
@@ -92,40 +81,24 @@
                 <span>選單</span>
             </label>
 
-        <nav>
-            <ul class="drop-down-menu">
-                <li><a href="index.html">首頁</a>
-                </li>
-                <li><a href="#" id="num">隊員</a>
-                    <ul>
-                        <div id="nav1" style="display: none;">
-                            <li><a href="#item1">隊長</a>
-                            </li>
-                            <li><a href="#item2">副隊長</a>
-                            </li>
-                            <li><a href="#item3">球員</a>
-                            </li>
-                            <li> <a href="#item4">球經</a>
-                            </li>
-                        </div>
-                    </ul>
+        <nav class="nav1">
 
+            <a href="index.html">首頁</a>
+            <a href="#" id="num">隊員</a>
+            <div id="nav1" style="display: none;">
+                <a href="#item1">隊長</a>
 
+                <a href="#item2">副隊長</a>
 
+                <a href="#item3">球員</a>
 
+                <a href="#item4">球經</a>
 
-                    <li><a href="#">關於我們</a>
+            </div>
 
-                    </li>
-                </li>
-                <li><a href="photo.html">照片</a>
-                </li>
-                <li> <a href="com.html">比賽</a>
-                </li>
+            <a href="photo.html">照片</a>
 
-            </ul>
-
-
+            <a href="com.html">比賽</a>
 
 
 
@@ -145,7 +118,7 @@
             第18屆隊長
         </h2>
         <div>
-            <img src="隊長.jpg" height="350"></div>
+            <img src="球員/隊長.jpg" height="350"></div>
         <pre style="font-size: 17px; font-family: '標楷體';">*科系:餐旅系
             <br>*年級:2年級
                 </pre>
@@ -154,7 +127,7 @@
 
         </h2>
 
-        <img src="副對.jpg" height="350">
+        <img src="球員/副對.jpg" height="350">
         <pre style="font-size: 17px; font-family: '標楷體';">*科系:資管系
             <br>*年級:碩士2年級
                 </pre>
@@ -169,17 +142,17 @@
 
     <div class="row">
 
-        <img src="球員5.jpg" height="350" width="350">
-        <img src="球員2.jpg" height="350" width="350">
-        <img src="球員3.jpg" height="350" width="350">
+        <img src="球員/球員5.jpg" height="350" width="350">
+        <img src="球員/球員2.jpg" height="350" width="350">
+        <img src="球員/球員3.jpg" height="350" width="350">
     </div>
     <pre style="font-size: 17px; font-family: '標楷體'; text-align:center">*科系:資管系
         <br>*年級:1年級
         </pre>
 
     <div class="row">
-        <img src="球員4.jpg" height="350" width="350">
-        <img src="球員1.jpg" height="350" width="350">
+        <img src="球員/球員4.jpg" height="350" width="350">
+        <img src="球員/球員1.jpg" height="350" width="350">
     </div>
     <pre style="font-size: 17px; font-family: '標楷體' ;  text-align:center">*科系:餐旅系
         <br>*年級:1年級
@@ -191,7 +164,7 @@
     <h2 id="item4">
         球經
     </h2>
-    <img src="球經1.jpg" height="350" width="350">
+    <img src="球員/球經1.jpg" height="350" width="350">
     <pre style="font-size: 17px; font-family: '標楷體';">*科系:餐旅系
         <br>*年級:1年級</pre>
 </div>
